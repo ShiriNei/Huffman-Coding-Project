@@ -5,9 +5,6 @@ This Huffman coding project compresses and decompresses text by analyzing charac
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Usage](#usage)
-  - [Compression](#compression)
-  - [Decompression](#decompression)
 - [Code Structure](#code-structure)
   - [Compression Details](#compression-details)
   - [Decompression Details](#decompression-details)
@@ -22,23 +19,6 @@ Huffman Coding is a widely used algorithm for lossless data compression. This pr
 - **Reliable Decompression**: Restores the original text file from the compressed format.
 - **Structured Code**: Clear separation of concerns with dedicated classes for each functionality.
 
-## Usage
-
-### Compression
-
-To compress a text file, use the following command:
-```bash
-python compression.py <path_to_text_file>
-```
-This will generate a compressed file in the same directory as the original text file.
-
-### Decompression
-
-To decompress a file, use the following command:
-```bash
-python decompression.py <path_to_compressed_file>
-```
-This will recreate the original text file from the compressed format.
 
 ## Code Structure
 
@@ -54,7 +34,6 @@ This will recreate the original text file from the compressed format.
 - **`Order` Class**: Parses the in-order and pre-order traversal strings used to reconstruct the Huffman tree during decompression.
 - **`TreeNode` Class**: Represents nodes in the reconstructed Huffman tree, facilitating the decoding process.
 - **`HuffmanDecoder` Class**: Reconstructs the Huffman tree from the encoded data and decodes the compressed file back into the original text format.
-
 
 
 
